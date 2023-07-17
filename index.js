@@ -1,10 +1,9 @@
-// turn this project folder into a git repo
-// push this repo to github
-// sign up on railway.app
-// connect the github project
-
 import express from "express";
 import db from "./db.js";
+
+import dotenv from "dotenv";
+dotenv.config();
+
 console.log(db);
 const app = express();
 
@@ -60,4 +59,4 @@ app.get("/search", (req, res) => {
 // /settings
 // /json
 
-app.listen(8765, () => console.log("Server is running on port 8765"));
+app.listen(process.env.PORT, () => console.log("Server is running on port " + process.env.PORT));
