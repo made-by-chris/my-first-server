@@ -1,0 +1,27 @@
+A SERVER
+
+a computer program (server.js server.py server.php)
+it listens for requests
+it responds to requests
+its always running - if its not running, it cant listen
+
+a restaurant
+you sit at a table
+you talk to the waiter (fetch request)
+the waiter listens to you
+the waiter answers your questions
+the waiter talks to the kitchen for you (DB or file storage system)
+the waiter brings things from the kitchen to you (DB or file storage system)
+
+waiter -> serveur
+
+server - waiter standing around in a restaurant waiting for your request
+API - the menu in the restaurant
+
+API - is a bunch of routes
+/pizza
+/beer
+/prosecco
+/salad
+/appetizer
+/dessert
