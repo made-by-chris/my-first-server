@@ -17,6 +17,7 @@ const homepage = `
     <a href="/about">about</a>
     <div id="list"></div>
     <script>
+      console.log("im in the browser");
       fetch("/search?name=pasta")
         .then((res) => res.json())
         .then((data) => {
@@ -54,9 +55,5 @@ app.get("/search", (req, res) => {
   });
   res.send(matchingRestaurants.length > 0 ? matchingRestaurants : "sorry there are no restaurants matching your criteria");
 });
-
-// /about
-// /settings
-// /json
 
 app.listen(process.env.PORT, () => console.log("Server is running on port " + process.env.PORT));
